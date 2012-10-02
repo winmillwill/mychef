@@ -12,7 +12,7 @@ application "nih_make" do
   owner "wamilton"
   group "www-data"
 
-  repository "ssh://promet_git/nih.prometdev.com"
+  repository "git@git.promethost.com:nih.prometdev.com"
   revision "make.1"
   promet = Chef::EncryptedDataBagItem.load("keys", "promet")
   deploy_key promet['ssh']

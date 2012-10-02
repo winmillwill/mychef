@@ -34,7 +34,7 @@ application app_name do
   owner "wamilton"
   group "www-data"
 
-  repository "ssh://promet_git/airbox.prometdev.com"
+  repository "git@git.promethost.com:airbox.prometdev.com"
   revision "master"
   promet = Chef::EncryptedDataBagItem.load("keys", "promet")
   deploy_key promet['ssh']

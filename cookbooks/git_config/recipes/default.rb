@@ -29,6 +29,8 @@ end
   end
 end
 
-execute "git config --global init.templatedir '/home/wamilton/.git_template'" do
-  user "wamilton"
-end
+# seems to try to lock the root git config...
+#
+# execute "git config --global init.templatedir '/home/wamilton/.git_template'" do
+#   user "wamilton"
+# end
