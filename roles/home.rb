@@ -21,7 +21,8 @@ run_list (
     "recipe[drush]",
     "recipe[ctags]",
     "recipe[git_config]",
-    "recipe[airbox]"
+    "recipe[airbox]",
+    "recipe[crs]"
   ]
 )
 default_attributes "authorization" => {"sudo" => {"groups" => ["sysadmin"], "passwordless" => true}}
