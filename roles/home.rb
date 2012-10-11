@@ -15,14 +15,9 @@ run_list (
     'recipe[fnichol-user::data_bag]',
     'recipe[nihmake]',
     'recipe[chef-dotfiles]',
-    "recipe[nodejs]",
-    "recipe[apache2]",
-    "role[db_master]",
-    "recipe[drush]",
     "recipe[ctags]",
     "recipe[git_config]",
-    "recipe[airbox]",
-    "recipe[crs]"
+    "role[drupal]"
   ]
 )
 default_attributes "authorization" => {"sudo" => {"groups" => ["sysadmin"], "passwordless" => true}}
