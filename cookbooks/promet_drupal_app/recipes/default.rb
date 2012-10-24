@@ -9,4 +9,13 @@
 
 promet_drupal_app "airbox"
 promet_drupal_app "crs"
-promet_drupal_app "rowan"
+
+promet_drupal_app "nih" do
+  git_ref 'promet'
+end
+
+# promet_deploy "nih_deploy" do
+#   repo_name 'nih.prometdev.com'
+#   reference 'promet'
+#   drush_build 'nih-drush-build'
+# end

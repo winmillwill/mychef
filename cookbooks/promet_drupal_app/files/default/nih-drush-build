@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+drush si -y --account-pass='password';
+drush en $(cat mods_enabled | tr '\n' ' ') -y;
+drush cc all -y;
+drush fra -y;
+drush en -y nih_democontent;
+drush dis comment shortcut overlay toolbar -y;

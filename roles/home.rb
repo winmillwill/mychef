@@ -13,7 +13,6 @@ run_list (
     'recipe[mutt]',
     'recipe[oh-my-zsh]',
     'recipe[fnichol-user::data_bag]',
-    'recipe[nihmake]',
     'recipe[chef-dotfiles]',
     "recipe[ctags]",
     "recipe[git_config]",
