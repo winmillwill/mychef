@@ -14,6 +14,10 @@ promet_drupal_app "nih" do
   git_ref 'promet'
 end
 
+promet_drupal_app "ldaptest" do
+  git_ref 'promet'
+end
+
 # promet_deploy "nih_deploy" do
 #   repo_name 'nih.prometdev.com'
 #   reference 'promet'

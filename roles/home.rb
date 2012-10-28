@@ -5,7 +5,6 @@ run_list (
     'recipe[build-essential]',
     'recipe[ruby-shadow]',
     'recipe[tmux]',
-    'recipe[vim]',
     'recipe[sudo]',
     'recipe[users::sysadmins]',
     'recipe[git]',
@@ -16,6 +15,8 @@ run_list (
     'recipe[chef-dotfiles]',
     "recipe[ctags]",
     "recipe[git_config]",
+    "recipe[emacs]",
+    "recipe[rvm::user]",
     "role[drupal]"
   ]
 )
